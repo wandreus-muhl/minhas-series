@@ -10,6 +10,8 @@
 }
 .menu {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 .menu li{
     display: inline-flex;
@@ -17,12 +19,13 @@
 .menu li a {
     position: relative;
     padding: 16px 0 5px;
+    margin-right: 35px;
     color: #BFC3BA;
     text-decoration: none;
     text-transform: uppercase;
 }
 .menu li a:hover {
-    color: #60495A;
+    color: #FC0FC0;
     transition: .9s;
 }
 .menu li a:after {
@@ -36,7 +39,7 @@
     transform-origin: 50% 50%;
     width: 100%;
     height: 2px;
-    background-color: #BFC3BA;
+    background-color: #FC0FC0;
     -webkit-transition: transform 250ms;
     transition: transform 250ms;
 }
@@ -44,10 +47,10 @@
     -webkit-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
-.title1 {
+.title {
     color: #BFC3BA;
 }
-.title2 {
+.title-fragment {
     color: #3F3244;
     background-color: #BFC3BA;
     text-shadow: 1px 1px 3px;
