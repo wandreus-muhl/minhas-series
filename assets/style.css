@@ -1,28 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Poiret One');
+@import url('https://fonts.googleapis.com/css?family=Fredoka One');
+
 * {
     margin: 0px;
     padding: 0px;
 }
-.header {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
     background: #2F2235;
     background: linear-gradient(180deg, #2F2235 40%, #3F3244 70%);
 }
+.logo {
+    font-family: 'Poiret One';
+    position: relative;
+    font-weight: 700;
+    color: #BFC3BA;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.7s;
+    padding: 25px;
+}
+.logo-fragment {
+    font-family: 'Fredoka One';
+    background-color: #2F2235;
+    border: 4px solid #2F2235;
+    border-radius: 5px;
+    box-shadow: -3px -3px 2px #BFC3BA30,    
+                5px 5px 5px rgba(0,0,0,0.2),
+                15px 15px 15px rgba(0,0,0,0.2);
+}
 .menu {
-    list-style: none;
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .menu li{
-    display: inline-flex;
+    font-family: 'Quicksand';
+    position: relative;
+    list-style: none;
 }
 .menu li a {
     position: relative;
-    padding: 16px 0 5px;
-    margin-right: 35px;
+    margin: 0 15px;
     color: #BFC3BA;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: .7s;
 }
 .menu li a:hover {
     color: #FC0FC0;
@@ -46,12 +83,4 @@
 .menu li a:hover:after {
     -webkit-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
-}
-.title {
-    color: #BFC3BA;
-}
-.title-fragment {
-    color: #3F3244;
-    background-color: #BFC3BA;
-    text-shadow: 1px 1px 3px;
 }
